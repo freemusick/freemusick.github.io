@@ -26,14 +26,20 @@ h2 {
   margin: 0 0 20px;
 }
 
+nav {
+  text-align: center;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 10px;
 }
 
@@ -42,6 +48,9 @@ nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 section {
@@ -51,20 +60,27 @@ section {
 
 section p {
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 600px; /* Adjust the width as desired */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section a {
-  display: inline-block;
+  display: block;
+  margin-bottom: 10px;
   padding: 10px 20px;
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: border-color 0.3s ease;
+  border: 1px solid #fff;
 }
 
 section a:hover {
-  background-color: #ccc;
+  border-color: #fff;
 }
 
 footer {
@@ -89,7 +105,6 @@ footer {
   }
 }
 
-
 .logo {
   max-width: 200px;
   margin: 0 auto;
@@ -99,4 +114,28 @@ footer {
 .logo object {
   max-width: 100%;
   height: auto;
+}
+
+#updates {
+  margin-top: 20px;
+}
+
+#updates h2 {
+  margin-bottom: 10px;
+}
+
+#updates a {
+  color: #fff;
+  background-color: #000;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  border: 1px solid #fff;
+}
+
+#updates a:hover {
+  border-color: #fff;
 }
